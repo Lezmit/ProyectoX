@@ -10,6 +10,23 @@
 		  <link href="css/bootstrap.css" rel="stylesheet">
       <link href="css/font-awesome.css" rel="stylesheet">
 	    <link type=text/css href="css/style.css" rel="stylesheet">
+        <script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+    alert("Incorrecto");
+
+}
+</script>
 	</head>
 	<body>
 	    <div class="inicio" id="inicio">
@@ -27,12 +44,12 @@
     		  <div class="serie figCir"></div>
     		  <div class="serie figCua"></div>
     		  <div class="serie figCir"></div>
-    		  <div class="figInterrogante"></div>
+    		  <div class="serie figInterrogante" id="drop1"></div>
     		</div>
     		<div class="figAlter">
-    		  <div class="altern figRom"></div>
+              <div class="altern figRom" id="drag" draggable="true"></div>
     		  <div class="altern figCua"></div>
-    		  <div class="altern figCir"></div>
+    		  <div class="altern figCir" id="drag2" draggable="true" ></div>
     		</div>
     		<button type="button" class="btn btn-danger" id="btnTest2">Siguiente</button>
     	</div>
