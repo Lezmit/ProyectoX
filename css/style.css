@@ -3,3 +3,85 @@
   	margin: 0;
   	padding: 0;
 }
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.inicio {
+     width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    position: fixed;
+    top:0; 
+    left:0;
+    background-color: yellow;
+}
+.pUno {
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    position: fixed;
+    top:0; 
+    left:0;
+    background-color:aqua;
+    text-align: center;
+}
+.pDos {
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    position: fixed;
+    top:0; 
+    left:0;
+    background-color:crimson;
+    text-align: center;
+}
+.figSerie {
+    position: relative;
+    border: 2px solid red;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.figAlter {
+    position: relative;
+    border: 2px solid green;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.figCua {
+    position: relative;
+    background-color: darkcyan;
+}
+.figCir {
+    border-radius: 50%;
+    background-color: coral;
+}
+.figRom{ 
+    background: #428bca;
+    transform: rotate(45deg);
+
+}
+.serie{
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    display: inline-block;
+    margin:  2%;
+}
+.altern{
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    display: inline-block;
+    margin: 2%;
+}
+
+.figImg {
+    width: 100px;
+    height: 100px;
+}
