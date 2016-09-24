@@ -1,20 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>ProyectoX</title>
-      <link rel="icon" type="image/ico" href="image/trello.ico">
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-		  <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/font-awesome.css" rel="stylesheet">
-	    <link type=text/css href="css/style.css" rel="stylesheet">
-	</head>
-	<body>
-    
-		<script  src="js/main.js"></script>
-		<script src="js/jquery.min.js"></script>
-   	<script src="js/bootstrap.min.js"></script>
-	</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Me sale</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <link type=text/css href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="nombre-proyecto title">
+            <h4>Me sale</h4>
+        </header>
+        <section class="presentacion-pag container" >
+            <div class="cuadro-presentacion col-md-offset-3 col-md-5">
+                <h3 class="subtitulo"> Hey! inicia este juego diviértete y aprende con nosotros, es súper fácil... </h3>
+                <button type="button" id="inicia" class="prestcn-boton"><a href="#presentacion2"  class="btn-inicia"><h3>Inicia</h3></a></button>
+            </div>
+        </section>
+        <section class="presentacion-pag  container" id="presentacion2">
+            <div class="cuadro-presentacion col-md-offset-3 col-md-5">
+                <label for="caracter" class="subtitulo">Ingresa tu nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                <br><br>
+                <button type="button" id="enviar" class="prestcn-boton" ><a href="#presentacion3" class="btn-inicia">Enviar</a></button>
+            </div>
+        </section>
+        <section class="presentacion-pag container" id="presentacion3" >
+            <div class="cuadro-presentacion col-md-offset-3 col-md-5">
+               <h2>Hola!</h2>
+                <h3 class="subtitulo-ingresado" id="nombre-ingresado"></h3>
+                <h3 class="subtitulo"> ¿Estás listo para jugar?</h3>
+                <button type="button" id="listo" class="prestcn-boton">Listo!</button>
+            </div>
+        </section>
+        <script  src="js/main.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>

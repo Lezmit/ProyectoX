@@ -1,5 +1,60 @@
 * {
-  	box-sizing: border-box;
-  	margin: 0;
-  	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Lobster', cursive;
+    overflow: hidden;
+}
+.presentacion-pag{
+    padding-bottom: 30px;
+    background-image: url(../img/fondo-candy.png);
+    width: 100%;
+}
+
+.nombre-proyecto{
+    background-color: #006621;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+
+.cuadro-presentacion{
+    margin-top: 17%;
+    padding: 7%;
+    border-radius: 11px;
+    background-color: #FE5443;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 2.5em;
+}
+
+#nombre{
+    padding: 4% 23%;
+    background: #FEDBC5;
+    margin-top: 13%;
+}
+
+.prestcn-boton{
+    padding: 3% 12%;
+    border: none;
+    border-radius: 5px;
+    background-color: #84E6F1;
+    position: relative;
+    margin-left: 60%;
+}
+.prestcn-boton:horver{
+    background-color: #63cfcf;
+    color: #fff;
+}
+.btn-inicia{
+    text-decoration: none;
+    color: white;
 }
