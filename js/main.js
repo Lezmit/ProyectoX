@@ -20,7 +20,7 @@ window.addEventListener("load", function(){
     
     /*empieza otra funcion*/
     
-    function DragDrop(drag, drop){
+    function dragDrop(drag, drop){
         var drag = document.getElementById(drag);
         var drop = document.getElementById(drop);
         drag.ondragstart = function(e){
@@ -40,27 +40,26 @@ window.addEventListener("load", function(){
             parrafo.style.display="none";
         }
     };   
-    DragDrop("drag12", "drop122");
-    DragDrop("drag22", "drop22");
-    DragDrop("drag32", "drop3");
-    DragDrop("drag4", "drop4");
+    dragDrop("drag12", "drop122");
+    dragDrop("drag22", "drop22");
+    dragDrop("drag32", "drop3");
+    dragDrop("drag4", "drop4");
     
     /*finaliza funcion*/
     
     /*inicia juego 2*/
     
-   /* var inicio = document.getElementById("inicio");
+    var inicio = document.getElementById("inicio");
     var botonInicio = document.getElementById("btnTest");
-    var botonTest = document.getElementById("btnTest2");
+    var botonTest = document.getElementById("listo");
     var pregunta1 = document.getElementById("pregunta1");
     var pregunta2 = document.getElementById("pregunta2");
-    drag = document.getElementById("drag");
     botonTest.addEventListener("click", function (){
-        DragDrop("drag", "drop1");
-        DragDrop("drag2", "drop1");
-        DragDrop("drag3", "drop1");
+        dragDrop("drag", "drop1");
+        dragDrop("drag2", "drop1");
+        dragDrop("drag3", "drop1");
     });
-*/
+/*
     //Esto sirve para bloquear el clic derecho dentro de nuestra pagina e impedir que entren al inspector
   /*  document.oncontextmenu = function(){return false}
 */
@@ -70,7 +69,7 @@ window.addEventListener("load", function(){
     // Para Firefox*/
     //document.onmousedown = function(){return false;}
 
-/*
+
     botonTest.addEventListener("click", function (){
         var no = document.getElementById("no");
         var si = document.getElementById("si");
@@ -107,8 +106,6 @@ window.addEventListener("load", function(){
 
         var uva = document.getElementById("uva");
         uva.addEventListener("click", function(){
-            //pera.style.width= "300px";
-            //pera.style.heigth= "300px";
             si.style.display= "none";
             msj.innerHTML="INCORRECTO";
             no.style.display= "block";
@@ -116,7 +113,7 @@ window.addEventListener("load", function(){
 
     });
 
-    function DragDrop(drag, drop) {
+    function dragDrop(drag, drop) {
         var drag = document.getElementById(drag);
         var drop = document.getElementById(drop);
         drag.ondragstart = function(e)
@@ -134,16 +131,7 @@ window.addEventListener("load", function(){
             var id = e.dataTransfer.getData("contenido");
             e.target.appendChild(document.getElementById(id));
         }
-    }
-    
-    
-    
-    */
-    
-    
-    
-    
-    
+    }  
     
 /*finaliza juego 2*/
 /*inicia juego 3*/ 

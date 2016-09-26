@@ -30,7 +30,7 @@ body{
 }
 
 .cuadro-presentacion{
-    margin-top: 13%;
+    margin-top: 10%;
     padding: 7%;
     border-radius: 11px;
     background-color: #FE5443;
@@ -93,22 +93,14 @@ h4, h2, h3{
     height: 90px;
     margin-bottom: 5%;
 }
-/*juego2*/
-/*.inicio {
-    width: 100%;
-    min-height: 100%;
-    height: auto;
-    top:0; 
-    left:0;
-    background-color: yellow;
-}
+
 .pUno {
     width: 100%;
     min-height: 100%;
     height: auto;
     top:0; 
     left:0;
-    background-color:aqua;
+    background-color:#F7BE81;
     text-align: center;
 }
 .pDos {
@@ -155,8 +147,8 @@ h4, h2, h3{
 }
 
 .figImg {
-    width: 100px;
-    height: 100px;
+    width: 5rem;
+    height: 5rem;
 }
 
 .figInterrogante {
@@ -175,10 +167,10 @@ h4, h2, h3{
     background-color: #FE5443;
     margin-bottom: 2%;
         
-}*/
+}
 
 /*Creacion de los 2 elementos*/
-/*
+
 #drag, #drag2, #drag3; {
     width: 100px;
     height: 100px;
@@ -195,8 +187,8 @@ h4, h2, h3{
 #no, #si {
     position: relative;
     display: none;
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
     text-align: center;
     left: 50%;
 }
