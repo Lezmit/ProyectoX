@@ -40,78 +40,120 @@ window.addEventListener("load", function(){
             parrafo.style.display="none";
         }
     };   
-    DragDrop("drag1", "drop1");
+    DragDrop("drag12", "drop122");
     DragDrop("drag22", "drop22");
-    DragDrop("drag3", "drop3");
+    DragDrop("drag32", "drop3");
     DragDrop("drag4", "drop4");
     
-/*    finaliza funcion*/
-
+    /*finaliza funcion*/
+    
+    /*inicia juego 2*/
+    
+   /* var inicio = document.getElementById("inicio");
+    var botonInicio = document.getElementById("btnTest");
+    var botonTest = document.getElementById("btnTest2");
+    var pregunta1 = document.getElementById("pregunta1");
+    var pregunta2 = document.getElementById("pregunta2");
+    drag = document.getElementById("drag");
+    botonTest.addEventListener("click", function (){
+        DragDrop("drag", "drop1");
+        DragDrop("drag2", "drop1");
+        DragDrop("drag3", "drop1");
+    });
+*/
+    //Esto sirve para bloquear el clic derecho dentro de nuestra pagina e impedir que entren al inspector
+  /*  document.oncontextmenu = function(){return false}
+*/
+    //ESTO EVITA Q EL USUARIO IMPIDA LA SELECCION Y COPIA DE TEXTO DE NUESTRA PAGINA
+    // Para internet Explorer
+  /*  document.onselectstart = function(){return false;} 
+    // Para Firefox*/
+    //document.onmousedown = function(){return false;}
 
 /*
+    botonTest.addEventListener("click", function (){
+        var no = document.getElementById("no");
+        var si = document.getElementById("si");
+        var msj = document.getElementById("mensaje");
 
-DragDrop("drag", "drop1");
-DragDrop("drag2", "drop1");
 
+        //segundo ejercicio 
+        var pelota = document.getElementById("pelota");
+        pelota.addEventListener("click", function(){
+            pelota.style.display= "none";
+            no.style.display= "none";
+            msj.innerHTML="CORRECTO";
+            si.style.display= "block";
 
-    inicio = document.getElementById("inicio");
-    boton = document.getElementById("btnTest");
-    boton2 = document.getElementById("btnTest2");
-    pregunta1.style.display = "none";
-    pregunta2.style.display = "none";
-    pregunta1 = document.getElementById("pregunta1");
-    pregunta2 = document.getElementById("pregunta2");
-    boton.addEventListener("click", function (){
-        inicio.style.display = "none";
-        pregunta1.style.display = "block";
-        
+        });
+
+        var pera = document.getElementById("pera");
+        pera.addEventListener("click", function(){
+            //pera.style.width= "300px";
+            //pera.style.heigth= "300px";
+            si.style.display= "none";
+            msj.innerHTML="INCORRECTO";
+            no.style.display= "block";
+        });
+
+        var apple = document.getElementById("apple");
+        apple.addEventListener("click", function(){
+            //pera.style.width= "300px";
+            //pera.style.heigth= "300px";
+            si.style.display= "none";
+            msj.innerHTML="INCORRECTO";
+            no.style.display= "block";
+        });
+
+        var uva = document.getElementById("uva");
+        uva.addEventListener("click", function(){
+            //pera.style.width= "300px";
+            //pera.style.heigth= "300px";
+            si.style.display= "none";
+            msj.innerHTML="INCORRECTO";
+            no.style.display= "block";
+        });
+
     });
-
-//Esto sirve para bloquear el clic derecho dentro de nuestra pagina e impedir que entren al inspector
-document.oncontextmenu = function(){return false}
-
-//ESTO EVITA Q EL USUARIO IMPIDA LA SELECCION Y COPIA DE TEXTO DE NUESTRA PAGINA
-// Para internet Explorer
-document.onselectstart = function(){return false;} 
-// Para Firefox
-//document.onmousedown = function(){return false;}
-
-    boton2.addEventListener("click", function (){
-        pregunta1.style.display = "none";
-        pregunta2.style.display = "block";
-    });
-
-
 
     function DragDrop(drag, drop) {
-
-var drag = document.getElementById(drag);
-var drop = document.getElementById(drop);
-
-drag.ondragstart = function(e)
-{
-//Guardamos el id del elemento para transferirlo al elemento drop
-//Contenido es una clave que nos permitirá acceder al valor asignado
-e.dataTransfer.setData("contenido", e.target.id);
-}
-
-drop.ondragover = function(e){
-//Cancelar el evento que impide que podamos soltar el elemento drag
-e.preventDefault();
-}
-
-drop.ondrop = function(e){
-//Obtenemos los datos a través de la clave contenido, en este caso el id
-var id = e.dataTransfer.getData("contenido");
-e.target.appendChild(document.getElementById(id));
-}
-}*/
+        var drag = document.getElementById(drag);
+        var drop = document.getElementById(drop);
+        drag.ondragstart = function(e)
+        {
+            //Guardamos el id del elemento para transferirlo al elemento drop
+            //Contenido es una clave que nos permitirá acceder al valor asignado
+            e.dataTransfer.setData("contenido", e.target.id);
+        }
+        drop.ondragover = function(e){
+            //Cancelar el evento que impide que podamos soltar el elemento drag
+            e.preventDefault();
+        }
+        drop.ondrop = function(e){
+            //Obtenemos los datos a través de la clave contenido, en este caso el id
+            var id = e.dataTransfer.getData("contenido");
+            e.target.appendChild(document.getElementById(id));
+        }
+    }
+    
+    
+    
+    */
+    
+    
+    
+    
+    
+    
+/*finaliza juego 2*/
+/*inicia juego 3*/ 
+    var boton = document.getElementById("comenzar");
 	boton.addEventListener("click",function(){
 		llegadaSpider.style.display="none";
 		inicioSpider.classList.add("caminando");
 		inicioSpider.classList.remove("partida");
-		var contenedor=document.getElementById("contenedor");
-			contenedor.addEventListener("keydown",function(event){
+        var contenedor=document.getElementById("contenedor");
+        contenedor.addEventListener("keydown",function(event){
 			var x = inicioSpider.offsetLeft;
 			var y = inicioSpider.offsetTop;
 			var m = llegadaSpider.offsetLeft;
@@ -130,6 +172,7 @@ e.target.appendChild(document.getElementById(id));
 							llegadaSpider.style.display="inline-block";
 							llegadaSpider.style.position="absolute";
 							inicioSpider.style.display="none";
+                            alert("muy bien culminaste");
 						     }    
 							break;
 				/*	//izquierda
