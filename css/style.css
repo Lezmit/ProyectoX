@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Lobster', cursive;
-   /* overflow: hidden;*/
+    overflow: hidden;
 }
 
 .presentacion-pag{
@@ -28,11 +28,11 @@ body{
 }
 
 .cuadro-presentacion{
-    margin-top: 17%;
+    margin-top: 13%;
     padding: 7%;
     border-radius: 11px;
     background-color: #FE5443;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
 }
 
 .subtitulo{
@@ -64,8 +64,11 @@ body{
     text-decoration: none;
     color: white;
 }
-
-h4{
+h2, h3{
+    font-size:50px;
+    color: white;
+}
+h4, h2, h3{
     text-align: center;
 }
 
@@ -187,4 +190,60 @@ background: #3498db;
     background-size: contain;
     background-repeat: no-repeat;
 }*/
+.contenedorPregunta{
+	background-color: #bbdefb;
+	box-shadow: 5px 5px 5px -2px;
+    border-radius: 50px;
+    height: 230px;
+    position: absolute; /* centrar div verticalmente*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+}
+.estiloCaja{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top:50%; 
+	display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.estiloLetra{
+	font-size: 20px;
+	font-weight: 600;
+}
+.tituloPartida{
+	position: absolute;
+	left: 50px;
+	top: 60px; 
+}
+.partida{
+	background-image: url(../image/x_Spiderman1.gif);
+    left: 50px;
+}
+.tituloLlegada{
+	position: absolute;
+    top: 60px;
+    left: 480px; 
+}
+.llegada{
+	background-image: url(../image/x_Spiderman11.gif);
+    left: 490px; 
+}
+.caminando{
+	background-image: url(../image/x_Spiderman15.gif);
+	left: 50px;
+}
+.estiloBoton{
+	background-color: #ef5350 ;
+	border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 42%;
+    padding: 5px;	 
+}
 
