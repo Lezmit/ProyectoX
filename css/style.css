@@ -2,18 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body{
     font-family: 'Lobster', cursive;
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
+
 .presentacion-pag{
     padding-bottom: 48px;
     background-image: url(../img/fondo-candy.png);
     width: 100%;
 }
+
 .header-mesale{
     background-color: #F1F1F1;
     width: 100%;
@@ -53,17 +54,21 @@ body{
     position: relative;
     margin-left: 60%;
 }
+
 .prestcn-boton:horver{
     background-color: #63cfcf;
     color: #fff;
 }
+
 .btn-inicia{
     text-decoration: none;
     color: white;
 }
+
 h4{
     text-align: center;
 }
+
 .dibujos{
     display: inline-block;
     float: left;
@@ -71,6 +76,7 @@ h4{
     height: 80px;
     margin-right: 2%;
 }
+
 .drops{
     background-color: black;
     color: white;
@@ -81,4 +87,104 @@ h4{
 }
 
 /*finaliza primera parte*/
+./*inicio, .pUno, .pDos,          {
+    width: 100%;
+    min-height: 100%;
+    height: auto ;
+    top:0; 
+    left:0;
+    text-align: center
+}
+
+.inicio {
+    background-color: yellow;
+}
+
+.pUno {
+    background-color:aqua;
+}
+
+.pDos {
+    background-color:crimson;
+}
+
+.figSerie,  .figAlter {
+    box-sizing: border-box;
+    display: block;*/
+  /*  overflow: hidden;*/
+  /*  text-align: center;
+    position: relative;
+
+}
+
+.figSerie {
+    border: 2px solid red;
+}
+
+.figAlter { 
+    border: 2px solid green;
+}
+
+.figCua {
+    position: relative;
+    background-color: darkcyan;
+}
+
+.figCir {
+    border-radius: 50%;
+    background-color: coral;
+}
+
+.figRom{ 
+    background: #428bca;
+    transform: rotate(45deg);
+
+}
+.serie, .altern {*/
+   /* position: relative;
+    height: 10rem;
+    width: 10rem;
+    display: inline-block;
+    margin:  2%;
+}
+
+.figImg {
+    width: 100px;
+    height: 100px;
+}
+
+.figInterrogante {
+    position: absolute;
+    background: url(../img/signo.gif);
+    height: 10rem;
+    width: 10rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+Creacion de los 2 elementos
+#drag {
+width: 100px;
+height: 100px;
+transform: rotate(45deg);
+background: #3498db;
+
+}*/
+/*#drag2 {
+width: 100px;
+height: 100px;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+background: #3498db;
+
+}
+#drop1 {
+  background: url(../img/signo.gif);
+    height: 15rem;
+    width: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}*/
 
