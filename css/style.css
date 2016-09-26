@@ -10,18 +10,20 @@ body{
     overflow: hidden;
 }
 .presentacion-pag{
-    padding-bottom: 30px;
+    padding-bottom: 48px;
     background-image: url(../img/fondo-candy.png);
     width: 100%;
 }
-
-.nombre-proyecto{
-    background-color: #006621;
-    position: fixed;
-    text-align: center;
+.header-mesale{
+    background-color: #F1F1F1;
     width: 100%;
-    height: 50px;
-    color: white;
+    height: 79px;
+    position: fixed;
+}
+
+.logo-mesale{
+    position: fixed;
+    height: inherit;
 }
 
 .cuadro-presentacion{
@@ -29,6 +31,7 @@ body{
     padding: 7%;
     border-radius: 11px;
     background-color: #FE5443;
+    margin-bottom: 1%;
 }
 
 .subtitulo{
@@ -58,3 +61,24 @@ body{
     text-decoration: none;
     color: white;
 }
+h4{
+    text-align: center;
+}
+.dibujos{
+    display: inline-block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 2%;
+}
+.drops{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 5%;
+}
+
+/*finaliza primera parte*/
+

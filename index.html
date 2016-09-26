@@ -12,15 +12,15 @@
         <link type=text/css href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header class="nombre-proyecto title">
-            <h4>Me sale</h4>
+        <i><header class="title header-mesale">
+            <img src="img/logo-mesale.png" alt="Me sale" class="col-md-offset-1 col-md-3 logo-mesale" > 
         </header>
-        <section class="presentacion-pag container" >
-            <div class="cuadro-presentacion col-md-offset-3 col-md-5">
+        <section class="presentacion-pag container">
+            <div class="cuadro-presentacion col-md-offset-3 col-md-5" id="cambio-color">
                 <h3 class="subtitulo"> Hey! inicia este juego diviértete y aprende con nosotros, es súper fácil... </h3>
                 <button type="button" id="inicia" class="prestcn-boton"><a href="#presentacion2"  class="btn-inicia"><h3>Inicia</h3></a></button>
             </div>
-        </section>
+        </section> <!--finaliza presentacion-pag-->
         <section class="presentacion-pag  container" id="presentacion2">
             <div class="cuadro-presentacion col-md-offset-3 col-md-5">
                 <label for="caracter" class="subtitulo">Ingresa tu nombre:</label>
@@ -28,17 +28,38 @@
                 <br><br>
                 <button type="button" id="enviar" class="prestcn-boton" ><a href="#presentacion3" class="btn-inicia">Enviar</a></button>
             </div>
-        </section>
+        </section> <!--finaliza presentacion2-->
         <section class="presentacion-pag container" id="presentacion3" >
             <div class="cuadro-presentacion col-md-offset-3 col-md-5">
                <h2>Hola!</h2>
                 <h3 class="subtitulo-ingresado" id="nombre-ingresado"></h3>
                 <h3 class="subtitulo"> ¿Estás listo para jugar?</h3>
-                <button type="button" id="listo" class="prestcn-boton">Listo!</button>
+                <button type="button" id="listo" class="prestcn-boton"><a href="#presentacion4" class="btn-inicia">Listo!</a></button>
             </div>
-        </section>
+        </section> <!--finaliza presentacion3-->
+        <section class="presentacion-pag container" id="presentacion4">
+            <div class="cuadro-presentacion col-md-offset-3 col-md-5">
+                <div id="drop1" class="drops"><h4>León</h4></div>
+                <div id="drop2" class="drops"><h4>Gato </h4></div>
+                <div id="drop3" class="drops"><h4>Jirafa</h4></div>
+                <div id="drop4" class="drops"><h4>Hipopótamo</h4></div>
+                
+                <div class="drags" draggable="true"><img src="img/gato.png" alt="gato" id="drag1" class="dibujos"></div>
+                <div class="drags" draggable="true"><img src="img/hipopotamo.png" alt="hipopotamo" id="drag2" class="dibujos"></div>
+                <div class="drags" draggable="true"><img src="img/jirafa.png" alt="jirafa"  id="drag3" class="dibujos"></div>
+                <div  class="drags" draggable="true"><img src="img/leon.png" alt="leon" id="drag4" class="dibujos"></div>
+                <button type="button" id="listo" class="prestcn-boton"><a href="#presentacion5" class="btn-inicia">Terminé!</a></button>
+            </div>
+        </section> <!-- finaliza presentacion4-->
+        <section class="presentacion-pag container" id="presentacion5" >
+            <div class="cuadro-presentacion col-md-offset-3 col-md-5">
+               
+                <button type="button" id="listo" class="prestcn-boton"><a href="#presentacion4" class="btn-inicia">Listo!</a></button>
+            </div>
+        </section> <!--finaliza presentacion5-->
         <script  src="js/main.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
+</i>
