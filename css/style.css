@@ -216,8 +216,8 @@ h4, h2, h3{
     height: 230px;
     position: absolute; /* centrar div verticalmente*/
     left: 50%;
-    /*top: 50%;
-    transform: translate(-50%, -50%);*/
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 640px;
 }
 .estiloCaja{
